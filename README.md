@@ -7,7 +7,7 @@
 以下フォルダに任意の画像を配置してください
 
 ```
-Images/
+images/
 ├── cursor
 ├── favicon
 └── option
