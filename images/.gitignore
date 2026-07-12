@@ -1,3 +1,2 @@
-cursor/*
-favicon/*
-option/*
+*
+!.gitignore
