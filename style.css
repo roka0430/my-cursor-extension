@@ -1,0 +1,43 @@
+.my-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  pointer-events: none;
+  z-index: calc(infinity);
+}
+
+/* 非ホバー */
+.my-cursor.my-cursor-default {
+  display: block;
+}
+.my-cursor.my-cursor-pointer {
+  display: none;
+}
+
+/* ホバー */
+.my-cursor.my-cursor-default.my-cursor-hovering {
+  display: none;
+}
+.my-cursor.my-cursor-pointer.my-cursor-hovering {
+  display: block;
+}
+
+/* 画面外 */
+.my-cursor.my-cursor-hidden {
+  display: none;
+}
+
+/* 放置 */
+.my-cursor.my-cursor-idle {
+  animation: cursor-rotation var(--rotation-speed) infinite linear;
+}
+
+@keyframes cursor-rotation {
+  0% {
+    rotate: var(--initial-rotate);
+  }
+  100% {
+    rotate: calc(var(--initial-rotate) + 360deg);
+  }
+}

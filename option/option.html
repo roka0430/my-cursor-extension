@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon/favicon_300.png" / >
+    <link rel="stylesheet" href="option.css" />
+    <title>MyCursor | Option</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header__title">MyCursor | Option</h1>
+        <div class="header__save-status" id="saveStatus"></div>
+      </header>
+      <section class="section preview">
+        <h2 class="section__headline">Preview</h2>
+        <div class="preview__frame">
+          <img src="../images/option/arrow.png" class="preview__cursor" width="30" height="30" alt="cursor">
+          <img src="../images/cursor/cursor-default.png" class="preview__cursor-default" id="cursorDefault" width="0" height="0" alt="default">
+        </div>
+      </section>
+      <section class="section settings">
+        <h2 class="section__headline">Settings</h2>
+        <form class="settings__form" id="settingsForm">
+          <label class="settings__label">
+            <span class="settings__label-text">Cursor Size [px]</span>
+            <input type="number" class="settings__input" name="cursorSize">
+          </label>
+          <label class="settings__label">
+            <span class="settings__label-text">Idle Time [ms]</span>
+            <input type="number" class="settings__input" name="idleTime">
+          </label>
+          <label class="settings__label">
+            <span class="settings__label-text">Rotation Speed [ms]</span>
+            <input type="number" class="settings__input" name="rotationSpeed">
+          </label>
+          <label class="settings__label">
+            <span class="settings__label-text">Offset X [px]</span>
+            <input type="number" class="settings__input" name="offsetX">
+          </label>
+          <label class="settings__label">
+            <span class="settings__label-text">Offset Y [px]</span>
+            <input type="number" class="settings__input" name="offsetY">
+          </label>
+          <label class="settings__label">
+            <span class="settings__label-text">Rotation [deg]</span>
+            <input type="number" class="settings__input" name="rotation">
+          </label>
+          <label class="settings__label">
+            <span class="settings__label-text">Opacity</span>
+            <input type="number" class="settings__input" name="opacity">
+          </label>
+        </form>
+        <button class="reset-button" id="resetButton">Reset</button>
+      </section>
+    </div>
+    <script src="../settings.js" defer></script>
+    <script src="option.js" defer></script>
+  </body>
+</html>
